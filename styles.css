@@ -1,0 +1,115 @@
+/* global */
+body {
+  margin: 0;
+  background: #0f1220;
+  color: #c0caf5;
+  font-family: monospace;
+}
+
+/* terminal layout */
+.terminal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 700px;
+}
+
+/* command */
+.command {
+  color: #7aa2f7;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.command span {
+  color: #e0af68; /* [+] color */
+}
+
+/* profile */
+.profile {
+  margin: 10px 0 20px 0;
+}
+
+img {
+  width: 120px;
+  border-radius: 20px;
+  border: 2px solid #7aa2f7;
+  margin-bottom: 10px;
+}
+
+/* hidden content */
+.hidden {
+  display: none;
+  margin-left: 15px;
+  color: #a9b1d6;
+}
+
+/* note */
+.note {
+  margin-left: 15px;
+  color: #f7768e;
+}
+
+/* cursor */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* footer */
+#footer {
+  position: relative;
+  font-size: 14px;
+  color: #565f89;
+}
+
+/* left bottom quote */
+#quote {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  opacity: 0.7;
+}
+
+/* splash */
+#splash {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  color: #bb9af7;
+}
+
+/* credits */
+#credit {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  color: #565f89;
+  opacity: 0.6;
+}
+
+#credit:hover {
+  opacity: 1;
+}
+
+#credit a {
+  color: #7aa2f7;
+  text-decoration: none;
+}
+
+#credit a:hover {
+  text-decoration: underline;
+}
+

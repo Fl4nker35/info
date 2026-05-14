@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fl4nKer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="terminal">
+    <div class="content">
+
+      <div class="line command">~> whoami</div>
+
+      <div class="profile">
+        <img src="pfp.jpeg" alt="pfp" />
+        <div>Name: Fl4nKer</div>
+        <div>Role: idk</div>
+      </div>
+
+      <div class="line command" onclick="toggle('skills')">~> cat skills.txt <span>[+]</span></div>
+      <div id="skills" class="hidden">
+        <div> - Linux</div>
+        <div> - C++ (learning...)</div>
+        <div> - Rust (learning...)</div>
+      </div>
+
+      <div class="line command" onclick="toggle('socials')">~> cat socials.txt <span>[+]</span></div>
+      <div id="socials" class="hidden">
+        <div> - t.me/Fl4nKer27</div>
+      </div>
+
+      <div class="line command" onclick="toggle('projects')">~> cat projects.txt <span>[+]</span></div>
+      <div id="projects" class="hidden">
+        <div> - I dont have public projects right now (╥_╥)</div>
+        <div> - But will have in the future(I think)</div>
+      </div>
+
+      <div class="line command" onclick="toggle('notes')">~> cat note.txt</div>
+      <div id="notes" class="note">
+        Idk what i am supposted to write there.
+        <br/>So good luck?
+        <br/>@Fl4nKer ;3
+      </div>
+
+      <div class="line command">~> <span class="cursor">_</span></div>
+
+    </div>
+
+    <div id="footer">
+      <div id="credit">
+        idea by <a href="https://github.com/b1u3rchie" target="_blank">@b1u3rchie</a>
+      </div>
+      <div id="quote">"Talk is cheap. Show me the code."</div>
+      <div id="splash"></div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
